@@ -1,0 +1,186 @@
+#play-area {
+  @extend .clearfix;
+}
+
+.prompt, {
+  float: left;
+  .card {
+    margin: 0;
+    float: left;
+  }
+}
+
+.play-slots {
+  float: left;
+  margin-left: 15px;
+}
+
+.play-slot {
+  @extend .card;
+  float: left;
+  height: 260px;
+  width: 200px;
+  margin-right: 15px;
+  &.empty {
+    box-shadow: none;
+    border: 2px dashed #ddd;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    color: #d9d9d9;
+    opacity: .4;
+  }
+  &.filled {
+    @extend .card-white;
+    background: url('../images/wcard_logo.png') 16px 230px no-repeat #FFF;
+    background-size: 88px 16px;
+  }
+  &[ng-drop].drag-enter{
+    background: $brand-success;
+    &.filled {
+      opacity: .4;
+    }
+  }
+}
+
+.answered {
+    color: #efeeed; 
+    .fa {
+      color: $brand-success;
+}
+  }
+
+.answers {
+  position: relative;
+  height: 320px;
+  margin-left: 243px;
+  margin-right: 80px;
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    height: 100%;
+  }
+  &::before {
+    left: 0;
+    background: url('../images/answers-mask-left.png') top left no-repeat;
+  }
+  &::after {
+    right: 0;
+    background: url('../images/answers-mask-right.png') top right no-repeat;
+  }
+}
+
+.answers-viewport {
+  overflow-x: scroll;
+  padding-left: 20px;
+  height: 100%;
+}
+
+.answers-wrap {
+  @include clearfix();
+  box-sizing: content-box;
+  padding-right: 100px;
+}
+
+.answer-slot {
+  float: left;
+  margin: 0 12px;
+  .card {
+    float: left;
+    height: 260px;
+    width: 200px;
+    margin: 0 4px 16px;
+    background: url('../images/wcard_logo.png') 16px 230px no-repeat #FFF;
+    background-size: 88px 16px;
+  }
+  .czar-controls {
+    text-align: center;
+    clear: both;
+  }
+}
+
+
+.czar-message,
+.waiting-message {
+  float: left;
+  margin: 60px 0 20px 30px;
+  max-width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #efeeed;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 18px 30px 20px;
+  border-radius: 30px;
+  .fa-star {
+    color: $brand-danger;
+  }
+  .fa-clock-o {
+    color: $brand-warning;
+  }
+}
+
+.timer {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+}
+
+.timer-wrap {
+  width: 60px;
+  position: relative;
+  text-align: center;
+  .display-text {
+    font-weight: 700;
+    color: rgba(10,10,10,.8);
+    font-size: 18px;
+    line-height: 18px;
+    &.hurry {
+      color: rgba(221,33,27,0.7);
+    }
+    span {
+      font-size: 80%;
+      color: rgba(10,10,10,.9);
+      display: block;
+    }
+  }
+}
+
+.winner {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 60px;
+  text-align: center;
+  background: rgba(50,50,50,.9);
+  h2 {
+    color: #fafafa;
+    margin-bottom: 30px;
+    span.name {
+      color: $brand-info;
+    }
+    &.won-game::before,
+    &.won-game::after {
+      content: "\f091";
+      color: white;
+      font-family: "FontAwesome";
+      margin: 0 10px;
+      
+    }
+  }
+  .winner-cards {
+    margin-bottom: 40px;
+  }
+  .card {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 0 20px;
+  }
+}

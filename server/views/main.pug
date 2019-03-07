@@ -1,0 +1,26 @@
+doctype html
+html
+
+  include includes/head.pug
+
+  body(ng-app="cati", ng-controller="MainController as main")
+
+    include ./includes/header.pug
+
+    //- ALERTS
+    //- .alerts
+    //-   div(
+    //-     uib-alert
+    //-     ng-repeat="alert in main.alerts",
+    //-     ng-class="'alert-' + (alert.type || 'warning')",
+    //-     close="main.closeAlert($index)"
+    //-   ) {{alert.msg}}
+
+    //- INIT
+    include ./includes/init.pug
+
+    //- LOBBY
+    include ./includes/lobby.pug
+
+    //- GAME
+    include ./includes/game.pug

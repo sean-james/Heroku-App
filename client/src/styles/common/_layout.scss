@@ -1,0 +1,66 @@
+html, body {
+  height: 100%;
+}
+
+#game {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#play-area, #hand, #info {
+  width: 100%;
+  justify-content: top;
+  flex-direction: column;
+}
+
+#hand {
+  background: rgba(0, 0, 0, 0.3);
+  flex-basis: 14vw;
+  margin-bottom: 14px;
+}
+
+#play-area {
+  margin: 41px 0 0;
+  padding: 20px 15px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+#info {
+  flex-basis: 0px;
+  display: flex;
+  flex-direction: row;
+  .scoreboard, .console {
+    overflow: auto;
+    margin: 0 ($grid-gutter-width / 2);
+  }
+  .scoreboard {
+    flex-basis: 340px;
+  }
+  .console {
+    flex: 2;
+  }
+}
+
+.alerts {
+  width: 970px;
+  max-width: 80%;
+  margin: 60px auto 20px;
+}
+
+#init {
+  padding-top: 100px;
+  .init-form {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    .btn {
+      outline: none;
+    }
+    h2 {
+      margin: 20px 0;
+      color: white;
+    }
+  }
+}

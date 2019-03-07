@@ -1,0 +1,87 @@
+#info {
+  padding: 1px 0 15px;
+  background: $navbar-inverse-bg;
+  color: $navbar-inverse-color;
+  .rg-top {
+    background: $navbar-inverse-bg;
+    span {
+      margin: 5px 0 0 -10px;
+      height: 5px;
+      border-color: #666;
+    }
+  }
+}
+
+.scoreboard {
+  .table>tbody>tr>td,
+  .table>tbody>tr>th,
+  .table>tfoot>tr>td,
+  .table>tfoot>tr>th,
+  .table>thead>tr>td,
+  .table>thead>tr>th {
+    border-color: #333;
+  }
+  td.status, th.status {
+    width: 20px;
+    padding-left: 6px;
+    padding-right: 0;
+    .fa-star {
+      color: $brand-danger;
+    }
+    .fa-check {
+      color: $brand-success;
+    }
+  }
+  td.name, th.name {
+    &.self {
+      font-weight: bold;
+      color: $brand-warning;
+    }
+    .fa-trophy {
+      color: $brand-warning;
+      margin-left: 5px;
+      &:first-child {
+        margin-left: 12px;
+      }
+    }
+  }
+  td.score, th.score {
+    text-align: right;
+    width: 50px;
+  }
+}
+
+.console {
+  background: green;
+  overflow: hidden;
+  .messages {
+    height: calc(100% - 34px);
+    background: lighten($navbar-inverse-bg, 5%);
+    overflow-y: scroll;
+    padding: 6px;
+    .msg {
+      padding-bottom: 3px;
+      &.chat { 
+        span {
+          color: $brand-success;
+          font-weight: 700;
+        }
+      }
+      &.update { color: $gray-light }
+      &.info { color: $brand-info }
+      &.warning { color: $brand-warning }
+      &.success { color: $brand-success }
+    }
+  }
+  input {
+    border: none;
+    border-top: 1px solid #555;
+    border-radius: 0;
+    background: #444;
+    color: #fff;
+    &:focus {
+      border-color: #516677;
+    display: none !important;
+    }
+  }
+}

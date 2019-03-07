@@ -1,0 +1,19 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../../bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import "common/global";
+@import "common/layout";
+
+@import "components/cards";
+@import "components/hand";
+@import "components/header";
+@import "components/info-panel";
+@import "components/lobby";
+@import "components/play-area";
+@import "components/resizable";
+@import "components/slider";

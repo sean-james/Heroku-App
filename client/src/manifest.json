@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "app.js": {
+      "files": [
+        "scripts/app.js",
+        "scripts/services/**/*.js",
+        "scripts/controllers/**/*.js",
+        "scripts/directives/**/*.js"
+      ]
+    },
+    "vendor.js": {
+      "bower": [
+        "angular",
+        "angular-animate",
+        "angular-audio",
+        "angular-bootstrap",
+        "angular-resizable",
+        "angular-scroll-glue",
+        "angular-svg-round-progressbar",
+        "angularjs-slider",
+        "ngDraggable"
+      ]
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    }
+  },
+  "paths": {
+    "source": "client/src/",
+    "dist": "client/dist/"
+  },
+  "config": {
+    "devUrl": "http://localhost:8080"
+  }
+}

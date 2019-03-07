@@ -1,0 +1,10 @@
+{
+  "name": "CAH Heroku App",
+  "keywords": ["node", "express"],
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "Production mode must be set to false for build",
+      "value": "false"
+    }
+  }
+}

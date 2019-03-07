@@ -1,0 +1,21 @@
+body {
+  background: url('../images/retina_wood.png') #444;
+  // background: url('../images/wood_pattern.png') #444;
+  // background: url('../images/purty_wood.png') #444;
+  // background: url('../images/wood.jpg') $navbar-inverse-bg;
+  // background-size: cover;
+}
+
+// No more puffy looking fonts!
+html { 
+  -webkit-font-smoothing: antialiased;  
+  -moz-font-smoothing : greyscale;
+  -o-font-smoothing : antialiased;  
+  -ms-font-smoothing : antialiased; 
+  -khtml-font-smoothing : antialiased;
+  overflow-x: hidden;
+}
+
+.align-right {
+  text-align: right;
+}
