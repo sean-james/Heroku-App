@@ -1,6 +1,6 @@
 
 {
-  "name": "CAH HerokuApp",
+  "name": "HerokuApp",
   "version": "0.1.1",
   "description": "An online Cards Against Humanity clone Heroku App",
   "license": "CC-BY-NC-SA-4.0",
