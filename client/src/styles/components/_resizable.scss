@@ -8,8 +8,8 @@
 .rg-right, .rg-left, .rg-top, .rg-bottom {
   display: block;
   width: 14px;
-  height: 0px;
-  line-height: 0px;
+  height: 14px;
+  line-height: 14px;
   position: absolute;
   z-index: 1;
   -moz-user-select: -moz-none;
@@ -23,6 +23,7 @@
   box-sizing: border-box;
   display: block;
   border: 1px solid #ccc;
+  height: 0px;
 }
 
 .rg-right span, .rg-left span {
