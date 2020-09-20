@@ -29,7 +29,7 @@ function Game(gameOpts) {
     newRound: newRound,
     players: [],
     playerList: playerList,
-    playerLimit: 10,
+    playerLimit: 15,
     round: false,
     roundTime: gameOpts.roundTime,
     scoreLimit: gameOpts.scoreLimit,
